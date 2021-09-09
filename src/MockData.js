@@ -8,7 +8,7 @@ const managerMock = {
 const engineerMock = {
     engineer_name: 'Sandra',
     engineer_id: '87897',
-    engineer_email: 'Sandra@email.com',
+    engineer_email: 'sandra@email.com',
     engineer_github: 'sandraGitHub'
 };
 
