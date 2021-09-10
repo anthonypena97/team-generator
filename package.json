@@ -21,6 +21,7 @@
   "homepage": "https://github.com/anthonypena97/team-generator#readme",
   "dependencies": {
     "inquirer": "^8.1.2",
-    "jest": "^27.1.0"
+    "jest": "^27.1.0",
+    "open": "^8.2.1"
   }
 }

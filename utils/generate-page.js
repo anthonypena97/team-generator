@@ -1,8 +1,78 @@
-const generatePage = (manager, engineers, interns) => {
+const { engineerQuestions } = require("../src/Questions");
 
-    // console.log(manager);
-    // console.log(engineers);
-    // console.log(interns);
+const generateEngineers = (engineers) => {
+
+    // console.log("engingineers,", engineers)
+    engineersHTML = []
+
+    for(let i = 0; i < engineers.length; i++) {
+
+        let eachEngineer = 
+        `
+        <div class="row">
+             <div class="col red">
+                <div class="card">
+        
+                    <div class="card-header">
+                        <h5 class="card-title">${engineers[i].name}</h5>
+                        <h6 class="card-title role"> <span class="material-icons">laptop</span> Engineer</h6>
+                    </div>
+        
+                    <div class="card-body">
+                      <p class="card-text">EMAIL: <a href="mailto:${engineers[i].email}">${engineers[i].email}</a></p>
+                      <p class="card-text">ID: ${engineers[i].id}</p>
+                      <p class="card-text">GitHub: <a href="https://www.github.com/sandraGitHub.com">${engineers[i].github}</a></p>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        `
+
+        engineersHTML.push(eachEngineer);
+
+    }
+
+    return engineersHTML.join('');
+
+};
+
+const generateInterns = (interns) => {
+
+    internsHTML = [];
+
+    for(let i = 0; i < interns.length; i++) {
+
+        let eachIntern = 
+        `
+         <div class="row">
+            <div class="col red">
+                  <div class="card">
+        
+                      <div class="card-header">
+                          <h5 class="card-title">${interns[i].name}</h5>
+                          <h6 class="card-title role"> <span class="material-icons">school</span> Intern</h6>
+                      </div>
+        
+                      <div class="card-body">
+                        <p class="card-text">EMAIL: <a href="mailto:${interns[i].email}">${interns[i].email}</a></p>
+                        <p class="card-text">ID: ${interns[i].id}</p>
+                        <p class="card-text">SCHOOL: ${interns[i].school}</p>
+                      </div>
+        
+                </div>
+             </div>
+        </div>
+        `
+
+        internsHTML.push(eachIntern)
+    };
+
+    return internsHTML.join('');
+    
+};
+
+const generatePage = (manager, engineers, interns) => {
 
     return`<!DOCTYPE html>
     <html lang="en">
@@ -34,60 +104,25 @@ const generatePage = (manager, engineers, interns) => {
                                 </div>
     
                                 <div class="card-body">
-                                  <p class="card-text">EMAIL: <a href="mailto:toto@email.com">toto@email.com</a></p>
-                                  <p class="card-text">ID: 779432</p>
-                                  <p class="card-text">OFFICE: 483290483</p>
+                                  <p class="card-text">EMAIL: <a href="mailto:${manager.email}">${manager.email}</a></p>
+                                  <p class="card-text">ID: ${manager.id}</p>
+                                  <p class="card-text">OFFICE: ${manager.office}</p>
                                 </div>
     
                             </div>
                         </div>
                     </div>
-    
-                    <div class="row">
-                      <div class="col red">
-                            <div class="card">
-    
-                                <div class="card-header">
-                                    <h5 class="card-title">Sandra</h5>
-                                    <h6 class="card-title role"> <span class="material-icons">laptop</span> Engineer</h6>
-                                </div>
-    
-                                <div class="card-body">
-                                  <p class="card-text">EMAIL: <a href="mailto:sandra@email.com">sandra@email.com</a></p>
-                                  <p class="card-text">ID: 789794832</p>
-                                  <p class="card-text">GitHub: <a href="https://www.github.com/sandraGitHub.com">sandraGitHub</a></p>
-                                </div>
-    
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="row">
-                      <div class="col red">
-                            <div class="card">
-    
-                                <div class="card-header">
-                                    <h5 class="card-title">Alex</h5>
-                                    <h6 class="card-title role"> <span class="material-icons">school</span> Intern</h6>
-                                </div>
-    
-                                <div class="card-body">
-                                  <p class="card-text">EMAIL: <a href="mailto:alex@email.com">alex@email.com</a></p>
-                                  <p class="card-text">ID: 8908394</p>
-                                  <p class="card-text">SCHOOL: The Univerisy</p>
-                                </div>
-    
-                            </div>
-                        </div>
-                    </div>
+
+                    ${generateEngineers(engineers)}
+
+                    ${generateInterns(interns)}
     
                 </div>
             </div>
       </div>
     </body>
     
-    </html>
-    `;
+    </html>`;
 
 };
 

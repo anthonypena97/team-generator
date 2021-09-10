@@ -42,9 +42,9 @@ h1 {
   height: 100%;
 }
 
-.red {
-  /* background-color: red; */
-}
+/* .red {
+  background-color: red;
+} */
 
 .container {
   overflow-y: scroll;
