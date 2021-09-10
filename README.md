@@ -55,11 +55,13 @@ Please refer to the [Contributor Covenenant](https://www.contributor-covenant.or
 <p> ---------------------------------------- </p>
 for testing objects: 
 
+
 npm jest
 
 
 <p> ---------------------------------------- </p>
 for testing application with mock data - bypass questions:
+
 
 uncomment // new GeneratorTest().initializeQuestions(); in index.js
 
