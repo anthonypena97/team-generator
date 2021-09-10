@@ -9,7 +9,7 @@ Javascript Application written with Node.Js.
 Open, Inquirer, and Jest node packages are used.
 
 ## Description
-Command Line Prompt Team Web Page Generator
+A User may answer questions in order to generate a team web page.
 
 ## Table of Contents
 * [Installation](#installation)
