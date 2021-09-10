@@ -63,7 +63,6 @@ const engineerQuestions = [
 		message: "What is your engineer's name?",
 		validate: engineer_name => {
 			if (engineer_name) {
-				s
 				return true;
 			} else {
 				console.log('Please enter your engineer name!');
@@ -87,7 +86,7 @@ const engineerQuestions = [
 	{
 		type: 'input',
 		name: 'engineer_email',
-		message: "What is your egineer's email?",
+		message: "What is your engineer's email?",
 		validate: engineer_email => {
 			if (engineer_email) {
 				return true;
@@ -100,7 +99,7 @@ const engineerQuestions = [
 	{
 		type: 'input',
 		name: 'egineer_github',
-		message: "What is your egineer's github",
+		message: "What is your engineer's github username?",
 		validate: engineer_github => {
 			if (engineer_github) {
 				return true;
@@ -157,7 +156,7 @@ const internQuestions = [
 	{
 		type: 'input',
 		name: 'intern_school',
-		message: "What is your intern's school",
+		message: "What is your intern's school?",
 		validate: intern_school => {
 			if (intern_school) {
 				return true;

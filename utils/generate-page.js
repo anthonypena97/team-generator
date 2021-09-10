@@ -1,5 +1,3 @@
-const { engineerQuestions } = require("../src/Questions");
-
 const generateEngineers = (engineers) => {
 
     // console.log("engingineers,", engineers)
