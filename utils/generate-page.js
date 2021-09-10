@@ -5,6 +5,8 @@ const generateEngineers = (engineers) => {
 
     for(let i = 0; i < engineers.length; i++) {
 
+        console.log(engineers)
+
         let eachEngineer = 
         `
         <div class="row">
@@ -19,7 +21,7 @@ const generateEngineers = (engineers) => {
                     <div class="card-body">
                       <p class="card-text">EMAIL: <a href="mailto:${engineers[i].email}">${engineers[i].email}</a></p>
                       <p class="card-text">ID: ${engineers[i].id}</p>
-                      <p class="card-text">GitHub: <a href="https://www.github.com/sandraGitHub.com">${engineers[i].github}</a></p>
+                      <p class="card-text">GitHub: <a href="https://www.github.com/${engineers[i].github}.com">${engineers[i].github}</a></p>
                     </div>
         
                 </div>

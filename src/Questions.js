@@ -98,7 +98,7 @@ const engineerQuestions = [
 	},
 	{
 		type: 'input',
-		name: 'egineer_github',
+		name: 'engineer_github',
 		message: "What is your engineer's github username?",
 		validate: engineer_github => {
 			if (engineer_github) {
