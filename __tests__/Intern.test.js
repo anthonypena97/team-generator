@@ -9,3 +9,15 @@ test('creates a new Manager object', () => {
     expect(intern.school).toEqual(expect.any(String));
 
 });
+
+test("returns intern's school", () => {
+    const intern = new Intern('Toto', 89, 'toto@email.com', 'University');
+
+    expect(intern.getSchool()).toEqual(intern.school);
+});
+
+test('return role', () => {
+    const intern = new Intern('Toto', 89, 'toto@email.com', 'University');
+
+    expect(intern.getRole()).toEqual("Intern");
+});

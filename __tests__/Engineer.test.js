@@ -9,3 +9,15 @@ test('creates a new Manager object', () => {
     expect(engineer.github).toEqual(expect.any(String));
 
 });
+
+test('return github', () => {
+    const engineer = new Engineer('Toto', 89, 'toto@email.com', 'toto97');
+
+    expect(engineer.getGitHub()).toEqual(engineer.github);
+});
+
+test('return role', () => {
+    const engineer = new Engineer('Toto', 89, 'toto@email.com', 'toto97');
+
+    expect(engineer.getRole()).toEqual("Engineer");
+});

@@ -9,3 +9,15 @@ test('creates a new Manager object', () => {
     expect(manager.office).toEqual(expect.any(String));
 
 });
+
+test('returns office number', () => {
+    const manager = new Manager('Toto', 89, 'toto@email.com', '801-888-8989');
+
+    expect(manager.getNumber()).toEqual(expect.any(String));
+})
+
+test('returns employee role', () => {
+    const manager = new Manager('Toto', 89, 'toto@email.com', '801-888-8989');
+
+    expect(manager.getRole()).toEqual("Manager");
+})
