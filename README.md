@@ -51,14 +51,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 Please refer to the [Contributor Covenenant](https://www.contributor-covenant.org/) for guidelines on contributing on this project.
 
 ## Tests
-for testing objects:
+
+<p> ---------------------------------------- </p>
+for testing objects: 
 
 npm jest
 
+
+<p> ---------------------------------------- </p>
 for testing application with mock data - bypass questions:
+
 uncomment // new GeneratorTest().initializeQuestions(); in index.js
+
 comment out new Generator().initializeQuestions(); in index.js
+
 save
+
 node index.js
 
 ## Questions
