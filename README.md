@@ -2,6 +2,8 @@
 ### An Application for Generating an Employee Team Web Page
 ![MIT License badge](https://img.shields.io/badge/license-MIT_License-green)
 
+![team-generator-demo](https://user-images.githubusercontent.com/79285555/132784323-6b1db5f5-4de8-4e7a-9b79-504eaf5936f4.gif)
+
 <p> ---------------------------------------- </p>
 
 Javascript Application written with Node.Js.
