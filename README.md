@@ -26,6 +26,8 @@ A User may answer questions in order to generate a team web page.
 - npm i
 ```
 
+- watch the [walkthrough video](https://drive.google.com/file/d/1Qd4DqyzaeoAI-lDLjl7-SDlm1ycwvsqW/view?usp=sharing) for further instruction on installation, testing, and usage
+
 ## Usage
 - check into folder directory with terminal
 - node index.js
